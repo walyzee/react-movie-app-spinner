@@ -34,7 +34,7 @@ class App extends React.Component {
 		this.LoadingTimer = setInterval(() => this.setState({loading : false}),3000);
 	}
 	
-	componentDidUnMount() {
+	componentWillUnmount() {
 		clearInterval(this.LoadingTimer)
 	}
 
